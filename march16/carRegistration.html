@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Car Rental</title>
+  </head>
+  <style>
+    *{
+      margin: 0px;
+    }
+    .card-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .todo-user-input {
+      background-color: white;
+      width: 60%;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #e4e7eb;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 15px;
+    }
+    form{
+      width:400px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding-top:30px;
+    }
+    .card{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background:linear-gradient(to right,rgb(53, 53, 163),rgb(138, 174, 230));
+      height:100vh;
+    }
+    h1{
+    color:#ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+    }
+    button{
+      background-color: rgb(38, 38, 236);
+      border: none;
+      color: #ffffff;
+      font-weight: 600;
+      padding:10px;
+      border-radius: 5px;;
+      margin:10px;
+    }
+  </style>
+  <body>
+    <div class="card">
+    <h1>Car Rental Registration Form</h1>
+    <form action="/register" method="post" class="card-container">
+      <input placeholder="Enter Customer name" type="text" name="name" class="todo-user-input"/><br />
+      <input placeholder="Enter Customer Email" type="email" name="email" class="todo-user-input"/><br />
+      <input
+        type="color"
+        name="color"
+        class="todo-user-input"
+      /><br />
+      <select class="todo-user-input" name="model">
+        <option value="honda" selected>Honda</option>
+        <option value="mercedez">Mercedez</option>
+        <option value="benz">Benz</option>
+        <option value="maruti">Maruti</option>
+      </select>
+      <button>Add Car</button>
+    </div>
+    </form>
+  </body>
+</html>
